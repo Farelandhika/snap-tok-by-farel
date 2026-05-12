@@ -12,7 +12,7 @@ async def tiktok_dl(update: Update, context: ContextTypes.DEFAULT_TYPE):
     filename = f"tiktok_{int(time.time())}"
 
     ydl_opts = {
-        'format': 'bestvideo+bestaudio/best',
+        'format': 'best[ext=mp4]',
         'outtmpl': f'{filename}.%(ext)s',
         'merge_output_format': 'mp4',
         'quiet': True
