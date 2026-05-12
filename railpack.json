@@ -1,3 +1,7 @@
 {
-  "start": "python python.py"
+  "$schema": "https://schema.railpack.com",
+  "deploy": {
+    "startCommand": "python python.py",
+    "aptPackages": ["ffmpeg"]
+  }
 }
